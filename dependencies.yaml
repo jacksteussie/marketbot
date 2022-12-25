@@ -1,0 +1,30 @@
+name: marketbot
+dependencies:
+- pip
+- python=3.9
+- pandas
+- tensorflow
+- pytest
+- transformers
+- configparser
+- xgboost
+- tqdm
+- scipy
+- numpy
+- matplotlib
+- flask
+- joblib
+- optuna
+- pip:
+  - polygon-api-client
+  - sklearn
+  - ta-lib
+  - shap
+  - tda-api
+  - coinbase
+  - fredapi
+  - scikeras
+  - rtgym
+  - omegaconf
+  - hydra-zen
+  - pandas-market-calendars

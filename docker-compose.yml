@@ -1,0 +1,30 @@
+version: '0.1'
+
+services:
+  db:
+    build: ./db
+    image: timescale/timescaledb:latest-pg10
+    container_name: marketbot-db
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  frontend:
+    build: ./frontend
+    image: node:alpine
+    container_name: marketbot-frontend
+    command: touch package.json && npm start
+    ports:
+      - 8080:8080
+  backend:
+    build: ./backend
+    image: jacksteussie/marketbot:latest
+    container_name: marketbot-backend
+    entrypoint: python main.py run --host=0.0.0.0
+    ports:
+      - 5002:5002
+    
+volumes:
+  db-data:
+    driver: local
+  backend-data:
+    driver: local

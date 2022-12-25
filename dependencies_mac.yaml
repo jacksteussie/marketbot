@@ -1,0 +1,34 @@
+name: marketbot
+channels: 
+  - conda-forge
+  - defaults
+  - apple
+dependencies:
+- pip
+- python=3.10
+- pandas
+- pytest
+- configparser
+- xgboost
+- tqdm
+- optuna
+- tensorflow-deps
+- flask
+- pip:
+  - tensorflow-macos
+  - tensorflow-metal
+  - scipy
+  - numpy
+  - polygon-api-client
+  - sklearn
+  - ta-lib
+  - shap
+  - tda-api
+  - coinbase
+  - fredapi
+  - scikeras
+  - rtgym
+  - omegaconf
+  - hydra-zen
+  - joblib
+  - pandas-market-calendars
