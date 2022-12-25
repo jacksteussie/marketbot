@@ -167,5 +167,6 @@ token.pkl
 .vscode/
 NOTES.md
 dependencies_mac.yml
-prototyping.ipynb
+prototyping1.ipynb
+prototyping2.ipynb
 *.h5

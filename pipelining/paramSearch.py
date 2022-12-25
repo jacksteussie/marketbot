@@ -15,8 +15,6 @@ from sklearn.feature_selection import RFECV
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import optuna
-from omegaconf import OmegaConf
-import hydra
 
 class Pipeline():
     def __init__(self, models, data, target, features, **kwargs):
