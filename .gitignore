@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 
 # misc
-*.DS_Store
+.DS_Store
 token.pkl
 .vscode/
 NOTES.md
